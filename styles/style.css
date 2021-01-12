@@ -116,20 +116,57 @@ footer {
 
   }
 
-  .rock-salt-font {
-      font-family: 'Rock Salt', cursive;
-      text-align: center;
-  }
+.rock-salt-font {
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
 
-  .quiz-container {
-      margin-top: -30px;
-  }
+.quiz-container {
+    margin-top: -30px;
+}
 
-  #quiz-results-div {
-      margin: 10px;
-      display: none;
-  }
+#quiz-results-div {
+    margin: 10px;
+    display: none;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
 
 #quiz-button {
     margin: 10px;
+    border: solid 3px lightgreen;
+    width: 400px;
+    height: 75px;
+    font-size: 2rem;
+    background-color: darkgreen;
+    color: white;
+}
+
+.article-images {
+    width: 400px;
+}
+
+.impact-statement {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: solid 2px lightgray;
+    color: darkgreen;
+}
+
+.list-item {
+    display: list-item;
+    list-style-type:circle;
+    list-style-position: inside;
+    list-style: inside;
+}
+
+.list-container {
+    margin-left: 30px;
+}
+
+h2 {
+    margin-top: 0px;
 }
