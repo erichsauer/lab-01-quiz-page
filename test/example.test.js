@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { answerCheck } from '../utils.js'
+import { answerCheck } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -15,4 +15,5 @@ test('any answer beginning in "y" or "Y" should be counted as true', (expect) =>
     //Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected);
+    expect.equal(actual2, expected2);
 });
