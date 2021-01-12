@@ -3,8 +3,10 @@ import { answerCheck } from './/utils.js'
 
 const quizButton = document.getElementById('quiz-button');
 const quizResult = document.getElementById('quiz-results-div');
+
 // initialize state
 // set event listeners to update state and DOM
+
 quizButton.addEventListener('click', () => {
     alert('So you wanna take a quiz about raccoons...');
     
@@ -29,11 +31,14 @@ quizButton.addEventListener('click', () => {
     if (answerCheck(answerTwo)) correctAnswers++;
     
     const answerThree = prompt('Are raccoons the child of a hamster and a witch?', 'yes/no')
+
+    quizButton.style.display = 'none'
+    quizResult.style.display = 'block'
     
     if (!answerCheck(answerThree)) correctAnswers++;
     
-const yourGrade = correctAnswers / 3 * 100
-const yourGradeRounded = Math.round(yourGrade)
+    const yourGrade = correctAnswers / 3 * 100
+    const yourGradeRounded = Math.round(yourGrade)
 
 if (correctAnswers > 1) {
     quizResult.textContent = `Congratulations, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! That's ${yourGradeRounded}%!`

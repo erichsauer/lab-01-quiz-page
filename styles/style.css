@@ -18,7 +18,7 @@ body {
     --gutter: 15px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color2);
 }
 
@@ -116,4 +116,20 @@ footer {
 
   }
 
-  
+  .rock-salt-font {
+      font-family: 'Rock Salt', cursive;
+      text-align: center;
+  }
+
+  .quiz-container {
+      margin-top: -30px;
+  }
+
+  #quiz-results-div {
+      margin: 10px;
+      display: none;
+  }
+
+#quiz-button {
+    margin: 10px;
+}
