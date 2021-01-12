@@ -170,3 +170,7 @@ footer {
 h2 {
     margin-top: 0px;
 }
+
+p {
+    line-height: 2rem;
+}
