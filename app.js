@@ -21,7 +21,7 @@ quizButton.addEventListener('click', () => {
     if (firstName === '') firstName = 'friend';
 
     prompt("What's your Social Security Number?", '0');
-    alert("NEVER give your SSN to a mid-90s-era pop-up prompt! Let's continue.");
+    alert("Just kidding. Let's continue!");
         
     let correctAnswers = 0;
 
