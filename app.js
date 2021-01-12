@@ -14,11 +14,14 @@ quizButton.addEventListener('click', () => {
     
     if(!confirmation) return;
     
-    const firstName = prompt("What's your first name?")
+    
+    let firstName = prompt("What's your first name?")
     const lastName = prompt("What's your last name?")
     
+    if (firstName === '') firstName = 'friend'
+
     prompt("What's your Social Security Number?", "0")
-    alert("NEVER give your SSN to a pop-up prompt from the mid-90s! Let's continue.")
+    alert("NEVER give your SSN to a mid-90s-era pop-up prompt! Let's continue.")
         
     let correctAnswers = 0
 
@@ -43,6 +46,8 @@ quizButton.addEventListener('click', () => {
 if (correctAnswers > 1) {
     quizResult.textContent = `Congratulations, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! That's ${yourGradeRounded}%!`
 } else {
-    quizResult.textContent = `Good grief, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! You need to study up on racoon facts!`
+    quizResult.textContent = `Good grief, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! You need to study up on raccoon facts!`
+
+    quizResult.style.color = 'red'
 }
 })
