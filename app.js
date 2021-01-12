@@ -41,6 +41,3 @@ if (correctAnswers > 1) {
     quizResult.textContent = `Good grief, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! You need to study up on racoon facts!`
 }
 })
-// - respond to button click with
-// - tracks number of correct answers
-// - displays score with name
