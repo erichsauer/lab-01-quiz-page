@@ -14,33 +14,32 @@ quizButton.addEventListener('click', () => {
     
     const firstName = prompt("What's your first name?")
     const lastName = prompt("What's your last name?")
-    const ssn = Number(prompt("What's your Social Security Number?", "0"))
-
-    if (ssn === 0) {
-        alert("Ha! Well played. Let's continue.")
-    } else { alert("NEVER give your SSN to a pop-up prompt from the mid-90s! Let's continue.")
-    }
+    
+    prompt("What's your Social Security Number?", "0")
+    alert("NEVER give your SSN to a pop-up prompt from the mid-90s! Let's continue.")
         
     let correctAnswers = 0
 
     const answerOne = prompt("Do raccoons have a dog's stomach and a possum's heart?", 'yes/no')
 
     if (answerCheck(answerOne)) correctAnswers++;
-
-    console.log(answerOne, correctAnswers)
     
-    const answerTwo = prompt("Is it scientifically speculated that raccoons are in fact an assemblage of very condensed squirrels?")
+    const answerTwo = prompt("Is it scientifically speculated that raccoons are in fact an assemblage of very condensed squirrels?", 'yes/no')
     
     if (answerCheck(answerTwo)) correctAnswers++;
-
-    console.log(answerTwo, correctAnswers)
     
-    const answerThree = prompt('Are raccoons the child of a hamster and a witch?')
+    const answerThree = prompt('Are raccoons the child of a hamster and a witch?', 'yes/no')
     
     if (!answerCheck(answerThree)) correctAnswers++;
     
-    console.log(firstName, lastName, correctAnswers);
-    
+const yourGrade = correctAnswers / 3 * 100
+const yourGradeRounded = Math.round(yourGrade)
+
+if (correctAnswers > 1) {
+    quizResult.textContent = `Congratulations, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! That's ${yourGradeRounded}%!`
+} else {
+    quizResult.textContent = `Good grief, ${firstName} ${lastName}! You scored ${correctAnswers} out of 3! You need to study up on racoon facts!`
+}
 })
 // - respond to button click with
 // - tracks number of correct answers
